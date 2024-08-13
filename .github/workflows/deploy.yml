@@ -1,4 +1,4 @@
-name: Deployment Bvir Client
+name: Deployment Bvir Dashboard
 on:
   push:
     branches:
