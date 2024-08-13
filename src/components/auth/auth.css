@@ -1,0 +1,7 @@
+.box{
+    width: 100% !important;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/img/authback.png');
+    background-size: cover  ;
+}
