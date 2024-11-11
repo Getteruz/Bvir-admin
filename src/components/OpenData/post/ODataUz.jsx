@@ -84,10 +84,10 @@ const ODataUz = () => {
     e.preventDefault();
     const formData = new FormData();
     const file = e.target.files[0];
-    formData.append("image", file);
+    formData.append("file", file);
 
     await axios
-      .post("https://grm-upload.getter.uz/upload/image", formData)
+      .post("https://grm-upload.getter.uz/upload/file", formData)
       .then(async (response) => {
         if (response.status == "400") {
           alert("iltimos rasm qayta yuklang!");
