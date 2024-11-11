@@ -87,7 +87,7 @@ const ODataUz = () => {
     formData.append("file", file);
 
     await axios
-      .post("https://grm-upload.getter.uz/upload/file", formData)
+      .post("https://storage.agroxizmatlar.uz/upload/file", formData)
       .then(async (response) => {
         if (response.status == "400") {
           alert("iltimos rasm qayta yuklang!");
