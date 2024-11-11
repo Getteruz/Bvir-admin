@@ -163,7 +163,7 @@ const ODataUz = () => {
       </InputBox>
       <InputBox>
         <Label>Fayl</Label>
-        <FileInput name={"image"} func={handleFileChange} />
+        <FileInput name={"image"} func={handleFileChange} accept="application/pdf" />
       </InputBox>
     </Inputs>
   );
