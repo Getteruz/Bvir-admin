@@ -93,7 +93,7 @@ const ODataUz = () => {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;
-        setSelectedFile({ link: response.data });
+        setSelectedFile({ link: response.data?.url });
       })
       .catch((error) => {
         console.error("File upload failed:", error);
