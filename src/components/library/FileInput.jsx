@@ -23,13 +23,14 @@ const PictureInput = styled.input`
     visibility: hidden;
   }
 `;
-const FileInput = ({ placeH, name, func }) => {
+const FileInput = ({ placeH, name, func, accept }) => {
   return (
     <PictureInput
       type="file"
       name={name}
       placeholder={placeH}
       onChange={func}
+      accept={accept}
     />
   );
 };
