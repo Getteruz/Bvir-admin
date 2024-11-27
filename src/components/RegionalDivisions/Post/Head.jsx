@@ -90,7 +90,7 @@ const HeadPost = () => {
           }
         )
         .then((res) => {
-          if (res.status == 201) {
+          if (res.status === 201) {
             alert("malumot qo'shildi");
             navigate("/dash/regdivison");
           }

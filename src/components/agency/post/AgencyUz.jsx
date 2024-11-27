@@ -79,7 +79,7 @@ const AgencyUz = () => {
     await axios
       .post("https://grm-upload.getter.uz/upload/image", formData)
       .then(async (response) => {
-        if (response.status == "400") {
+        if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;
@@ -128,7 +128,7 @@ const AgencyUz = () => {
           <VideoLinkInput
             placeholder="video link"
             name={"link"}
-            disabled={edit3 == false}
+            disabled={edit3 === false}
             onChange={changeValue}
           />
         </InputBox>
@@ -136,7 +136,7 @@ const AgencyUz = () => {
           <Label>Rasm yuklash</Label>
           <FileInput
             name={"image"}
-            disabled={edit3 == false}
+            disabled={edit3 === false}
             func={handleFileChange}
           />
         </InputBox>
@@ -145,7 +145,7 @@ const AgencyUz = () => {
         <Label>Mavzu</Label>
         <TittleInput
           type="text"
-          disabled={edit3 == false}
+          disabled={edit3 === false}
           name={"titleUz"}
           onChange={changeValue}
         />
@@ -155,9 +155,9 @@ const AgencyUz = () => {
         style={{ width: "768px", height: "300px" }}
         modules={moduls}
         theme="snow"
-        disabled={edit3 == false}
+        disabled={edit3 === false}
         value={value2}
-        readOnly={edit3==false}
+        readOnly={edit3===false}
         onChange={setValue}
       />
     </>

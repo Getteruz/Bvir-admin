@@ -94,7 +94,7 @@ const CommEn = () => {
         <Input
           name="addressEn"
           defaultValue={data.addressEn}
-          disabled={edit2 == false}
+          disabled={edit2 === false}
           onChange={changeValue}
           placeholder="Manzil"
         />
@@ -104,7 +104,7 @@ const CommEn = () => {
         <Input2
           name="workOrderEn"
           defaultValue={data.workOrderEn}
-          disabled={edit2 == false}
+          disabled={edit2 === false}
           onChange={changeValue}
           placeholder="Ish tartibi"
         />

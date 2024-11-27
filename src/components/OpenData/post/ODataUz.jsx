@@ -89,7 +89,7 @@ const ODataUz = () => {
     await axios
       .post("https://storage.agroxizmatlar.uz/upload/file", formData)
       .then(async (response) => {
-        if (response.status == "400") {
+        if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;
@@ -151,7 +151,7 @@ const ODataUz = () => {
       </InputBox>
       <InputBox>
         <Label>Chorak</Label>
-        <Select name="querter" disabled={querter == false} onChange={changeValue}>
+        <Select name="querter" disabled={querter === false} onChange={changeValue}>
           <option value="" defaultChecked>
             chorak
           </option>

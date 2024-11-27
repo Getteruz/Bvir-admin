@@ -82,7 +82,7 @@ const CInputEdUz = () => {
     await axios
       .post("https://grm-upload.getter.uz/upload/image", formData)
       .then(async response => {
-        if (response.status == "400") {
+        if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;

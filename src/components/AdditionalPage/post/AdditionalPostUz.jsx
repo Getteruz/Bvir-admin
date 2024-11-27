@@ -132,7 +132,7 @@ const AdditionalPostUz = () => {
       <InputBox>
         <Label>Bo'limi</Label>
         <Select
-          disabled={value.type == "Link Generate"}
+          disabled={value.type === "Link Generate"}
           name="side"
           onChange={changeValue}
         >

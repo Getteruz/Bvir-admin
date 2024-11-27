@@ -86,7 +86,7 @@ const HeadPost = () => {
           withCredentials: true,
         })
         .then((res) => {
-          if (res.status == 200) {
+          if (res.status === 200) {
             alert("malumot o'zgartirildi");
             navigate("/dash/communication");
           }
@@ -119,7 +119,7 @@ const HeadPost = () => {
               <Icon src={Shield} alt="" />
             </Btns>
             <Actions>
-              {edit2 == false ? (
+              {edit2 === false ? (
                 <Action onClick={() => dispatch(editElement(true))}>
                   <img src={Edit2} alt="" />
                   Tahrirlash

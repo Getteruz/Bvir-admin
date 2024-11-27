@@ -84,8 +84,8 @@ const HeadPost = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 201) {
-          if (res.status == 201) {
+        if (res.status === 201) {
+          if (res.status === 201) {
             alert("malumot qowildi");
             navigate("/dash/uselink");
           }

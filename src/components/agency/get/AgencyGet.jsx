@@ -187,7 +187,7 @@ const AgencyGet = () => {
                 <Input1
                   type="number"
                   name="uderReview"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.uderReview}
                   onChange={changeValue}
                 />
@@ -200,7 +200,7 @@ const AgencyGet = () => {
                 <Input1
                   type="number"
                   name="rejected"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.rejected}
                   onChange={changeValue}
                 />
@@ -213,7 +213,7 @@ const AgencyGet = () => {
                 <Input1
                   type="number"
                   name="solved"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.solved}
                   onChange={changeValue}
                 />
@@ -228,7 +228,7 @@ const AgencyGet = () => {
                 <Input2
                   type="number"
                   name="detachedLandArea"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.detachedLandArea}
                   onChange={changeValue}
                 />
@@ -238,7 +238,7 @@ const AgencyGet = () => {
                 <Input2
                   type="number"
                   name="allocatedSubsidies"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.allocatedSubsidies}
                   onChange={changeValue}
                 />
@@ -248,7 +248,7 @@ const AgencyGet = () => {
                 <Input2
                   type="number"
                   name="greenhouseSubsidies"
-                  disabled={edit1 == false}
+                  disabled={edit1 === false}
                   defaultValue={data1.greenhouseSubsidies}
                   onChange={changeValue}
                 />

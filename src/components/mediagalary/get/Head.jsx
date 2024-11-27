@@ -96,7 +96,7 @@ const Head = () => {
               <Icon src={Shield} alt="" />
             </Btns>
             <Actions>
-              <Link to={path == "/dash/galery" ? "add" : "add/video"}>
+              <Link to={path === "/dash/galery" ? "add" : "add/video"}>
                 <Action>
                   <img src={Plus} alt="" />
                   Qo'shish

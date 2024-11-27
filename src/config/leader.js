@@ -13,7 +13,7 @@ const leader = createSlice({
     deleteTodo: (state, action) => {
       return {
         ...state,
-        wishlist: state.wishlist.filter(item => item.id !== action.payload.id),
+        wishlist: state.wishlist.filter(item => item.id !=== action.payload.id),
       };
     },
   },

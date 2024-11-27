@@ -100,12 +100,12 @@ const CommUz = () => {
             defaultValue={data.addressUz}
             onChange={changeValue}
             placeholder="Manzil"
-            disabled={edit2 == false}
+            disabled={edit2 === false}
           />
         </InputBox>
         <InputBox>
           <Label>Xaritada belgilash</Label>
-          <Input disabled={edit2 == false} placeholder="Xaritada belgilash" />
+          <Input disabled={edit2 === false} placeholder="Xaritada belgilash" />
         </InputBox>
       </Inputs>
       <Inputs>
@@ -116,7 +116,7 @@ const CommUz = () => {
             defaultValue={data.phone}
             onChange={changeValue}
             placeholder="Telefon:"
-            disabled={edit2 == false}
+            disabled={edit2 === false}
           />
         </InputBox>
         <InputBox>
@@ -126,7 +126,7 @@ const CommUz = () => {
             defaultValue={data.email}
             onChange={changeValue}
             placeholder="E-mail"
-            disabled={edit2 == false}
+            disabled={edit2 === false}
           />
         </InputBox>
         <InputBox>
@@ -136,7 +136,7 @@ const CommUz = () => {
             onChange={changeValue}
             defaultValue={data.callCenter}
             placeholder="Call-center"
-            disabled={edit2 == false}
+            disabled={edit2 === false}
           />
         </InputBox>
         <InputBox>
@@ -146,7 +146,7 @@ const CommUz = () => {
             defaultValue={data.workOrderUz}
             onChange={changeValue}
             placeholder="Ish tartibi"
-            disabled={edit2 == false}
+            disabled={edit2 === false}
           />
         </InputBox>
       </Inputs>

@@ -196,7 +196,7 @@ const RegionalDGet = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 204) {
+        if (res.status === 204) {
           alert("malumot o'chirildi");
           window.location.reload();
         }
@@ -208,7 +208,7 @@ const RegionalDGet = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 204) {
+        if (res.status === 204) {
           alert("malumot o'chirildi");
           window.location.reload();
         }
@@ -227,7 +227,7 @@ const RegionalDGet = () => {
                 SetNum(e.id);
                 getOne(e.id);
               }}
-              className={num == e.id ? "baritemActive" : null}
+              className={num === e.id ? "baritemActive" : null}
             >
               {e.areaUz}
             </BarItem>
@@ -275,7 +275,7 @@ const RegionalDGet = () => {
                       setModal(!modal);
                     }}
                   />
-                  {data2.id == uid && modal ? (
+                  {data2.id === uid && modal ? (
                     <Icons>
                       <Link to={`/dash/reg/edit/${data2.id}`}>
                         <img style={{ cursor: "pointer" }} src={Edit2} alt="" />
@@ -339,7 +339,7 @@ const RegionalDGet = () => {
                           setModal(!modal);
                         }}
                       />
-                      {e.id == uid && modal ? (
+                      {e.id === uid && modal ? (
                         <Icons>
                           <Link to={`edit/${e.id}`}>
                             <img

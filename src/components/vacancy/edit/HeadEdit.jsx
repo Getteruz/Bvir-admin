@@ -82,7 +82,7 @@ const HeadEdit = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           alert("malumot o'zgartirildi");
           navigate("/dash/vacancy");
         }

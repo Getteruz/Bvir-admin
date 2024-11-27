@@ -81,10 +81,10 @@ const HeadPost = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 400) {
+        if (res.status === 400) {
           alert("malumot notogri kirildi");
         }
-        if (res.status == 201) {
+        if (res.status === 201) {
           alert("malumot qo'shildi");
           navigate("/dash/vacancy2");
         }

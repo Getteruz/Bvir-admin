@@ -99,7 +99,7 @@ const UploadPhoto = () => {
   };
 
   function deleteHandler(image) {
-    setSelectedImages(selectedImages.filter(e => e !== image));
+    setSelectedImages(selectedImages.filter(e => e !=== image));
     URL.revokeObjectURL(image);
   }
   const [selectedFile, setSelectedFile] = React.useState({});
@@ -110,7 +110,7 @@ const UploadPhoto = () => {
     await axios
       .post("https://grm-upload.getter.uz/upload/image", formData)
       .then(async response => {
-        if (response.status == "400") {
+        if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         setPhotoArr(prevArr => [...prevArr, response.data]);

@@ -113,7 +113,7 @@ const Bar = () => {
                   onClick={() => console.log(item.path)}
                   key={e.id}
                 >
-                  <Item className={pathname == item.path ? "active" : null}>
+                  <Item className={pathname === item.path ? "active" : null}>
                     <img src={item.img} alt="" />
                     {item.text}
                   </Item>

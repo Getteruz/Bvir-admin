@@ -115,7 +115,7 @@ const RegDoc = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 204) {
+        if (res.status === 204) {
           alert("malumot o'chirildi");
           window.location.reload();
         }
@@ -158,7 +158,7 @@ const RegDoc = () => {
                   src={Dote}
                   alt=""
                 />
-                {e.id == uid && modal ? (
+                {e.id === uid && modal ? (
                   <Icons>
                     <Link to={`edit/${e.id}`}>
                       <img style={{ cursor: "pointer" }} src={Edit2} alt="" />

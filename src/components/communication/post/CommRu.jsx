@@ -95,7 +95,7 @@ const CommRu = () => {
           name="addressRu"
           onChange={changeValue}
           defaultValue={data.addressRu}
-          disabled={edit2 == false}
+          disabled={edit2 === false}
           placeholder="Manzil"
         />
       </InputBox>
@@ -106,7 +106,7 @@ const CommRu = () => {
           onChange={changeValue}
           defaultValue={data.workOrderRu}
           placeholder="Ish tartibi"
-          disabled={edit2 == false}
+          disabled={edit2 === false}
         />
       </InputBox>
     </Inputs>

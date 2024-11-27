@@ -43,7 +43,7 @@ const MediaGet = () => {
           <Link to={""}>
             <BtnType
               style={
-                path == "/dash/galery" 
+                path === "/dash/galery" 
                   ? { backgroundColor: "#6C9B31", color: "#fff" }
                   : null
               }
@@ -54,7 +54,7 @@ const MediaGet = () => {
           <Link to={"video"}>
             <BtnType
               style={
-                path == "/dash/galery/video"
+                path === "/dash/galery/video"
                   ? { backgroundColor: "#6C9B31", color: "#fff" }
                   : null
               }

@@ -126,7 +126,7 @@ const Header = () => {
         }
       )
       .then((res) => {
-        if (res.status == 200) {
+        if (res.status === 200) {
           alert("maluomot o'zgartirildi");
           window.location.reload();
         }
@@ -155,7 +155,7 @@ const Header = () => {
               <Icon src={Priceteg} alt="" />
               <Icon src={Shield} alt="" />
             </Btns>
-            {edit1 == false ? (
+            {edit1 === false ? (
               <Add onClick={() => dispatch(editElement(true))}>
                 <img src={Edit2} alt="" />
                 Tahirlash

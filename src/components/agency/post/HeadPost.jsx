@@ -97,7 +97,7 @@ const HeadPost = () => {
         withCredentials: true,
       })
       .then((res) => {
-        if (res.status == 201) {
+        if (res.status === 201) {
           alert("malumot qoshildi");
           navigate("/dash/agency");
           window.location.reload();
@@ -127,7 +127,7 @@ const HeadPost = () => {
               <Icon src={Priceteg} alt="" />
               <Icon src={Shield} alt="" />
             </Btns>
-            {edit3 == false ? (
+            {edit3 === false ? (
               <Add onClick={() => dispatch(editElement(true))}>
                 <img src={Edit2} alt="" />
                 Tahirlash

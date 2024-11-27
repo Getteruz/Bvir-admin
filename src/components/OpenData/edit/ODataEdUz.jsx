@@ -89,7 +89,7 @@ const ODataEdUz = () => {
     await axios
       .post("https://grm-upload.getter.uz/upload/image", formData)
       .then(async (response) => {
-        if (response.status == "400") {
+        if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;
@@ -171,7 +171,7 @@ const ODataEdUz = () => {
         <Label>Chorak</Label>
         <Select
           name="querter"
-          disabled={querter == false}
+          disabled={querter === false}
           onChange={changeValue}
         >
           <option value="" defaultChecked>
