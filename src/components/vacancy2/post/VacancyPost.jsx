@@ -2,7 +2,7 @@ import React from "react";
 import Topbar from "../../library/Topbar";
 import styled from "styled-components";
 import { Flex } from "../../Utlis";
-import { Priceteg } from "../../../assets/img/img";
+// import { Priceteg } from "../../../assets/img/img";
 import { Link, Outlet } from "react-router-dom";
 import LangBox from "../../library/LangBox";
 const Content = styled(Flex)`

@@ -5,22 +5,22 @@ import UseInput from "../../../hooks/useInput";
 import { addElement } from "../../../config/vacancy";
 import { useDispatch } from "react-redux";
 import ReactQuill from "react-quill";
-const Input2 = styled.input`
-  width: 1038px;
-  height: 262px;
-  flex-shrink: 0;
-  border-radius: 3px;
-  border: 1px solid #e5e6e6;
-  background: rgba(242, 243, 244, 0.8);
-  color: #444;
-  font-family: Overpass;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.24px;
-  padding: 13px 10px 12px 10px;
-`;
+// const Input2 = styled.input`
+//   width: 1038px;
+//   height: 262px;
+//   flex-shrink: 0;
+//   border-radius: 3px;
+//   border: 1px solid #e5e6e6;
+//   background: rgba(242, 243, 244, 0.8);
+//   color: #444;
+//   font-family: Overpass;
+//   font-size: 12px;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: normal;
+//   letter-spacing: -0.24px;
+//   padding: 13px 10px 12px 10px;
+// `;
 
 const Input3 = styled.input`
   width: 256px;
