@@ -54,7 +54,7 @@ const StatisUz = () => {
     formData.append("image", file);
 
     await axios
-      .post("https://grm-upload.getter.uz/upload/image", formData)
+      .post("storage.agroxizmatlar.uz/upload/image", formData)
       .then(async response => {
         if (response.status == "400") {
           alert("iltimos rasm qayta yuklang!");
