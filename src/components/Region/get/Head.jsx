@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   ArrowL,
   ArrowR,
-  Edit2,
+  // Edit2,
   Plus,
   Priceteg,
   Redo,

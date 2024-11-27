@@ -99,7 +99,7 @@ const UploadPhoto = () => {
   };
 
   function deleteHandler(image) {
-    setSelectedImages(selectedImages.filter(e => e !=== image));
+    setSelectedImages(selectedImages.filter(e => e !== image));
     URL.revokeObjectURL(image);
   }
   const [selectedFile, setSelectedFile] = React.useState({});
