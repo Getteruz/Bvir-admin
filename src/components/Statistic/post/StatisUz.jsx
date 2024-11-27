@@ -47,22 +47,22 @@ const StatisUz = () => {
   const dispatch = useDispatch();
   const [selectedFile, setSelectedFile] = React.useState({});
   let urlFile = "";
-  const handleFileChange = async e => {
+  const handleFileChange = async (e) => {
     e.preventDefault();
     const formData = new FormData();
     const file = e.target.files[0];
-    formData.append("image", file);
+    formData.append("file", file);
 
     await axios
-      .post("storage.agroxizmatlar.uz/upload/image", formData)
-      .then(async response => {
+      .post("https://storage.agroxizmatlar.uz/upload/file", formData)
+      .then(async (response) => {
         if (response.status === "400") {
           alert("iltimos rasm qayta yuklang!");
         }
         urlFile = response.data;
-        setSelectedFile({ link: response.data });
+        setSelectedFile({ link: response.data?.url });
       })
-      .catch(error => {
+      .catch((error) => {
         console.error("File upload failed:", error);
       });
   };
@@ -84,7 +84,7 @@ const StatisUz = () => {
       </InputBox>
       <InputBox>
         <Label>File</Label>
-        <FileInput name={"image"} func={handleFileChange} />
+        <FileInput name={"image"} func={handleFileChange} accept="application/pdf" />
       </InputBox>
     </Inputs>
   );
